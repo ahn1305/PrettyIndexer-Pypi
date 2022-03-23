@@ -26,7 +26,13 @@ python3 -m stringindexer
 
 ## Here is a output of the program:
 
-<img height="300" width="700" src="main.png" />
+<img height="300" width="700" src="https://i.imgur.com/cGY5zyK.png?1"/>
+
+
+
+
+
+
 
 
 
