@@ -9,6 +9,8 @@ print("\n")
 user_input = input(" Enter the string to be indexed: ")
 
 
+
+
 def display_table():
 	list_var = []
 
@@ -78,6 +80,7 @@ def html_table():
 		file.write(myTable.get_html_string())
 		file.close()
 
+	print("Html file created.....")
 
 option1 = "\t1. Display the index values here"
 
@@ -93,7 +96,13 @@ print("\n")
 
 u_option = int(input(" Enter your choice (1 or 2): "))
 
-if u_option == 1:
+if u_option == 1 and len(user_input)>15:
+	print("Since length of string greater than 15, option 2 is best, Choosing option2")
+	html_table()
+elif u_option == 1 and len(user_input)<15:
 	display_table()
 elif u_option == 2:
 	html_table()
+else:
+	pass
+
