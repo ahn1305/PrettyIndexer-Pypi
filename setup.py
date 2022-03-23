@@ -10,6 +10,10 @@ setup (
 	description="Get positive and negative index values of a string displayed in a beautiful manner.",
 	py_modules=["stringindexer"],
 	package_dir={'':'src'},
+	author='Ashwin.B',
+    license='MIT',
+    author_email = 'ahnashwin1305@gmail.com',
+    url = 'https://github.com/ahn1305/PrettyIndexer',
 	long_description=long_description,
 	long_description_content_type = "text/markdown",
 
