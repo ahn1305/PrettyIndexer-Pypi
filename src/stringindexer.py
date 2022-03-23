@@ -1,5 +1,6 @@
 from prettytable import PrettyTable
 from print import *
+import os
 
 print("String Indexer", SM,GREEN)
 print("\n")
@@ -77,8 +78,25 @@ def html_table():
 
 
 	with open(user_input+".html",'w') as file:
+		file.write('<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">')
+		file.write('\n')
 		file.write(myTable.get_html_string())
+		file.write('\n')
+		file.write('<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>')
+
+	if user_input+".html" in os.listdir():
+		n_file = open(user_input+".html","r")
+		re_line = n_file.readlines()
 		file.close()
+
+		re_line[1] = '<table class= "table table-bordered">'
+
+		with open(user_input+".html","w") as l_file:
+			l_file.writelines(re_line)
+			l_file.close()
+
+
+
 
 	print("Html file created.....")
 

@@ -6,7 +6,7 @@ with open("README.md","r") as fh:
 setup (
 
 	name="PrettyIndexer",
-	version='0.0.3',
+	version='0.0.4',
 	description="Get positive and negative index values of a string displayed in a beautiful manner.",
 	py_modules=["stringindexer"],
 	package_dir={'':'src'},
