@@ -26,13 +26,15 @@ python3 -m stringindexer
 
 ## Here is a output of the program:
 
+
+
 **Terminal output:** 
 
 <img height="300" width="700" src="https://i.imgur.com/cGY5zyK.png?1"/>
 
 **Html Output:**
 
-<img height="200" width="100%" src="https://i.imgur.com/r8oTpbD.png"/>
+<img height="400" width="100%" src="https://i.imgur.com/MS4snqZ.png"/>
 
 
 
