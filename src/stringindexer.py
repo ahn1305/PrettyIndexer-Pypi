@@ -78,6 +78,8 @@ def html_table():
 
 
 	with open(user_input+".html",'w') as file:
+		file.write('<center><h2>String: '+user_input+'</h2></center><br></br>')
+		file.write('\n')
 		file.write('<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">')
 		file.write('\n')
 		file.write(myTable.get_html_string())
@@ -89,7 +91,7 @@ def html_table():
 		re_line = n_file.readlines()
 		file.close()
 
-		re_line[1] = '<table class= "table table-bordered">'
+		re_line[2] = '<table class= "table table-bordered">\n'
 
 		with open(user_input+".html","w") as l_file:
 			l_file.writelines(re_line)
